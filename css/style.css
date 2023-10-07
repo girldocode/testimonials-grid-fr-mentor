@@ -1,0 +1,361 @@
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    /* height: 100vh; */
+    background-color: hsl(210, 46%, 95%);
+    /* overflow: scroll; */
+}
+
+main {
+    min-height: calc(100vh - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    gap: 20px;
+    /* height: 75vh; */
+    /* width: 90vw; */
+    display: grid;
+    margin-left: 3%;
+    margin-right: 3%;
+    gap: 25px;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: auto;
+    place-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1.8rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h1 {
+    color: var(--White);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: left;
+    /* margin-left: 25px; */
+    /* margin-right: 30px; */
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    color: var(--White);
+    opacity: 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: left;
+    /* margin-left: 25px; */
+    /* margin-right: 25px; */
+}
+
+/*  daniel Clifford */
+.grid-daniel {
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right 15% bottom 100%;
+    background-color: hsl(263, 55%, 52%);
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+
+.dan {
+    height: 28px;
+    width: 28px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 25px; */
+    /* margin-top: 19px; */
+    margin-bottom: 22px;
+}
+
+.info-content h3 {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.info-content p {
+    color: var(--White);
+    opacity: 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    word-wrap: break-word;
+}
+
+
+/* End of grid-daniel */
+
+
+/* jonathan Walters */
+.grid-jonathan {
+    background-color: var(--Very-dark-grayish-blue);
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.jon {
+    height: 28px;
+    width: 28px;
+    border: 1px solid var(--Moderate-violet);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#jonname {
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#jongrd {
+    color: var(--White);
+    opacity: 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    margin-right: 9px;
+}
+
+.user-info-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 21px;
+    margin-left: 26px;
+    margin-bottom: 21px;
+}
+
+/* End of grid-jonathan */
+
+/*  jeanette Hermon */
+.grid-jeanette {
+    background-color: var(--White);
+    grid-column: 1;
+    grid-row: 2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.jenimg {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#jename {
+    color: var(--Very-dark-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#jengrd {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    margin-right: 9px;
+}
+
+#jenttl {
+    color: var(--Very-dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+
+#jendesc {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 70%;
+}
+
+.user-info-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-left: 28px;
+    margin-top: 23px;
+    margin-bottom: 24px;
+}
+
+
+/* End of grid-jeanette */
+
+/* Patrick Abrams */
+.grid-patrick {
+    background-color: var(--Very-dark-blackish-blue);
+    grid-column: 2/span 2;
+    grid-row: 2;
+}
+
+#patimg {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 1px solid var(--Moderate-violet);
+}
+
+#patname {
+    color: var(--White);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#patgrd {
+    color: var(--Light-gray);
+    opacity: 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.user-info-4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+
+/*  End of grid-patrick */
+
+/* kira whittle */
+.grid-kira {
+    background-color: var(--White);
+    grid-column: 4;
+    grid-row: 1/span 2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#kirimg {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#kirname {
+    color: var(--Very-dark-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#kirgrd {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 70%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    margin-left: 9px;
+}
+
+#kirttl {
+    color: var(--Very-dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+
+#kirdesc {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 70%;
+}
+
+.user-info-5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-left: 29px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+@media (max-width: 1120px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        margin: 20px;
+
+    }
+
+    .grid-daniel {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .grid-jonathan {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grid-jeanette {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .grid-patrick {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .grid-kira {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #dnl,
+    #grd,
+    #head,
+    #desc {
+    }
+}
